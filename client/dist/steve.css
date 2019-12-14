@@ -1,0 +1,271 @@
+
+.carousel {
+  box-sizing: border-box;
+  aria-hidden: true;
+}
+
+.main-image-container {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.main-images {
+  display: inline-block;
+  max-height: 800px;
+  min-height: 512px;
+  height: 512px;
+}
+
+.view-all {
+  bottom: 40px;
+  position: absolute;
+  right: 450px;
+}
+
+.main-images-preview {
+  display: inline-flex;
+  height: 100%;
+  overflow: hidden;
+}
+
+.preview-wrapper {
+  cursor: pointer;
+  flex-grow: 0;
+  flex-shrink: 0;
+  margin-right: 4px;
+}
+
+.preview-image {
+  height: 100%;
+  object-fit: cover;
+  transition: filter 0.2s ease;
+  width: 768px;
+}
+
+.va-btn {
+  min-height: 56px;
+  padding: 16px 36px;
+  font-size: 1rem;
+  line-height: 24px;
+  border-radius: 100px;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: transparent;
+  color: #fff;
+  text-shadow: none;
+  transition: all 0.25s ease-in-out;
+  box-shadow: none;
+  text-indent: 0px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-rendering: auto;
+  box-sizing: border-box;
+  margin: 0;
+  overflow: visible;
+  text-transform: none;
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  text-align: center;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: none;
+  white-space: nowrap;
+  align-items: flex-start;
+}
+
+.btn-label {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+#show-modal {
+  visibility: visible;
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.5s 0s, transform 0.25s;
+}
+
+.modal-container {
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 1050;
+  transform: scale(1.1);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+.modal-container .modal-header {
+  align-items: center;
+  background: linear-gradient(rgba(37, 47, 56, 0.5), rgba(37, 47, 56, 0));
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  padding-left: 10px;
+  z-index: 2;
+  position: absolute;
+  width: 100%;
+  transform: none;
+  transition: transform 625ms ease;
+  transition-property: transform, opacity;
+}
+
+.modal-carousel {
+  background-color: #252f38;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translateZ(0);
+  transition-property: all;
+}
+
+.modal-content {
+  margin-top: 75px;
+  position: relative;
+}
+
+.slide {
+  display: none;
+  text-align: center;
+}
+.slide img {
+  height: 100%;
+  width: auto;
+}
+
+#show-slide {
+  display: block;
+}
+
+.modal-count {
+  position: relative;
+  left: 16px;
+}
+
+.modal-close {
+  font-size: 20px;
+  line-height: 10px;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
+  right: 25px;
+}
+
+.prev {
+  left: 0;
+}
+
+.next {
+  right: 0;
+}
+
+.nav-wrapper {
+  font-size: 30px;
+  cursor: pointer;
+  align-items: center;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  width: 80px;
+  z-index: 1;
+  color: #fff;
+}
+
+.similar-btn-container {
+  position: relative;
+  float: right;
+  top: 30px;
+  right: 200px;
+}
+
+.similar-btn {
+  text-decoration: none;
+  color: #0067db;
+  padding: 11px 28px;
+  width: 50px;
+  border: 1px solid #908f8f;
+  border-radius: 50px;
+  background: #fff;
+  height: 50px;
+}
+
+.similar-carousel {
+  text-align: center;
+  background: #f5f4f3;
+}
+.similar-carousel h2 {
+  text-align: left;
+  display: inline-block;
+  position: relative;
+  right: 475px;
+}
+
+.similar-title {
+  text-align: center;
+}
+
+.similar-slide {
+  margin: 8px;
+  width: 250px;
+  display: inline-block;
+  cursor: pointer;
+}
+.similar-slide img {
+  width: 100%;
+  height: 188px;
+  border-radius: 4px;
+}
+
+.special img {
+  transition: transform 1.8s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(85%);
+}
+
+.special:hover img {
+  filter: brightness(100%);
+  transform: scale(1.1);
+}
+
+.similar-rate {
+  font-size: 14px;
+  color: #717171;
+  text-align: left;
+  margin-top: 5px 0;
+}
+
+.similar-rooms {
+  text-align: left;
+  margin-top: 5px;
+}
+
+.similar-reviews {
+  color: #717171;
+}
+
+.similar-rating-stars {
+  text-align: left;
+}
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

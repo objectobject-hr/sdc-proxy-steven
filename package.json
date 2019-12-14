@@ -1,0 +1,52 @@
+{
+  "name": "awayhome-proxy-test",
+  "version": "1.0.0",
+  "description": "Test proxy server for all away home modules",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon ./server/index.js",
+    "build": "webpack -w -d"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hrla33-falcons/awayhome-proxy-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hrla33-falcons/awayhome-proxy-test/issues"
+  },
+  "homepage": "https://github.com/hrla33-falcons/awayhome-proxy-test#readme",
+  "dependencies": {
+    "@babel/plugin-proposal-class-properties": "^7.7.4",
+    "@babel/plugin-transform-runtime": "^7.7.6",
+    "@babel/runtime": "^7.7.6",
+    "axios": "^0.19.0",
+    "babel-runtime": "^6.26.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "css-loader": "^3.3.2",
+    "express": "^4.17.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "http-proxy-middleware": "^0.20.0",
+    "mongodb": "^3.3.5",
+    "mongoose": "^5.7.13",
+    "morgan": "^1.9.1",
+    "nodemon": "^2.0.1",
+    "path": "^0.12.7",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-inlinesvg": "^1.2.0",
+    "style-loader": "^1.0.1",
+    "svg-inline-loader": "^0.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.7.4",
+    "@babel/preset-env": "^7.7.4",
+    "@babel/preset-react": "^7.7.4",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  }
+}
