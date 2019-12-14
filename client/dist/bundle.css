@@ -1,0 +1,13 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.navbar {
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}

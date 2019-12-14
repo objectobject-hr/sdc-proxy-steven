@@ -15,37 +15,35 @@
 }
 
 #kat-service {
-  font-family: 'Open Sans', sans-serif;
-  color: grey;
+  font-family: 'Lato', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 #listing_data {
-  padding: 0px 100px;
+  padding: 0px 50px;
 }
 
-h2 {
+.overview_amenities_title {
   color: black;
   border-bottom: 1px solid lightgrey;
   padding-bottom: 10px;
-  margin: 20px;
+  margin: 20px 0px;
 }
 
-h4 {
+.amenities_cat {
   color: black;
   margin-bottom: 10px;
 }
 
 #amenities {
-  margin: 20px;
   display: flex;
   flex-direction: column;
 }
 
 .subcat_container {
   border-bottom: 1px solid lightgrey;
-  padding-bottom: 20px;
+  padding: 25px 0px;
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -55,6 +53,7 @@ h4 {
   font-weight: 300;
   padding: 6px;
   margin: 10px;
+  color: grey;
 }
 
 #overview {
@@ -69,6 +68,7 @@ h4 {
 }
 
 .overview_entry {
+  color: grey;
   display: flex;
   font-size: 15px;
   align-items: center;
@@ -80,7 +80,7 @@ h4 {
 }
 
 .house_rules {
-  padding: 15px;
+  padding: 50px 0px 30px 0px;
 }
 
 .rules_container {
@@ -96,6 +96,7 @@ h4 {
   padding: 18px;
   border-bottom: 1px solid lightgrey;
   margin: 12px;
+  color: grey;
 }
 
 .rules {
@@ -118,6 +119,7 @@ h4 {
   font-weight: 300;
   font-size: 16px;
   padding: 10px;
+  color: grey;
 }
 
 .navbar {
@@ -132,6 +134,7 @@ h4 {
 
 .navbar_selections {
   padding-left: 3%;
+  cursor: pointer;
 }
 
 .navbar a {
@@ -152,22 +155,32 @@ h4 {
 }
 
 .tag {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 11px;
   background-color: #f5f4f3;
   padding: 7px 10px;
-  margin: 5px;
+  margin-right: 10px;
   border-radius: 2px;
 }
 
 .tag_section {
+  color: grey;
   padding-top: 15px;
   padding-bottom: 17px;
   border-top: 1px solid lightgrey;
   border-bottom: 1px solid lightgrey;
-  margin: 20px;
+}
+
+.cancel_policy {
+  color: grey;
 }
 
 .cancel_text {
-  font-size: 13px;
+  font-weight: 300;
+  font-size: 15px;
+}
+
+.cancel_title {
+  padding: 20px 0px;
+  color: black;
 }
