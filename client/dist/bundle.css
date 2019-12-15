@@ -75,7 +75,8 @@
   top: 80px;
 }
 
-button:hover {
+.al-list-property-button:hover,
+.al-search-button:hover {
   background: none;
   border: 1px solid #0067db;
   transition: all .25s ease-in-out;
