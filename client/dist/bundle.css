@@ -1,13 +1,29 @@
-body {
+#awayhomeApp {
   font-family: "Lato", sans-serif;
 }
 
-.navbar {
+#leftColumn {
+  float: left;
+  width: 70%;
+  bottom: 50px;
   background-color: white;
-  overflow: hidden;
-  width: 100%;
-  border-bottom: 1px solid lightgrey;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+}
+
+#rightColumn {
+  float: right;
+  width: 30%;
+}
+
+#carousel-service {
+  position: relative;
+  z-index: 10;
+}
+
+.al-sidebar-container {
+  font-size: 0;
+}
+
+.al-sidebar {
+  position: relative;
+  z-index: 20;
 }
