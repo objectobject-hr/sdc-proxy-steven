@@ -44,6 +44,7 @@
 }
 
 .al-feedback-text {
+  margin-top: 7.5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -215,13 +216,13 @@ body {
 .al-search-bar {
   position: absolute;
   left: 37.5px;
-  top: 93px;
+  top: 80px;
 }
 
 .al-check-in-input {
   position: absolute;
-  left: 560px;
-  top: 93px;
+  left: 605px;
+  top: 80px;
 }
 
 .al-check-out-input {
@@ -256,6 +257,8 @@ body {
   background-color: white;
   border: 0.5px solid lightgray;
   border-radius: 6px;
+  position: relative;
+  z-index: 4000;
 }
 
 .al-login-dropdown-container {
@@ -296,7 +299,7 @@ body {
   border: 0.5px solid lightgray;
   border-radius: 6px;
   position: relative;
-  z-index: 4;
+  z-index: 4000;
 }
 
 .al-help-dropdown-container {
@@ -356,7 +359,7 @@ body {
 
 .al-feedback-form-title-text {
   position: absolute;
-  top: -1.5px;
+  top: 20px;
   left: 32px;
   font-family: "Noto Sans TC", sans-serif;
   font-weight: bolder;
@@ -422,7 +425,7 @@ body {
   border: 1px solid lightgray;
   border-radius: 7.5px;
   position: relative;
-  z-index: 4;
+  z-index: 4000;
 }
 
 .al-flag-language-container {
@@ -2240,3 +2243,5 @@ body {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+/* proxy */

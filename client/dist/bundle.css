@@ -2,16 +2,35 @@
   font-family: "Lato", sans-serif;
 }
 
+#searchHeader {
+  position: relative;
+  z-index: 50;
+}
+
+#center {
+  display: flex;
+  position: relative;
+}
+
 #leftColumn {
-  float: left;
-  width: 70%;
+  /* float: left; */
+  width: 75%;
   bottom: 50px;
   background-color: white;
+  align-content: flex-start;
+}
+
+#map-container {
+  padding: 0 50px;
 }
 
 #rightColumn {
   float: right;
-  width: 30%;
+  /* align-self: flex-end; */
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 50;
 }
 
 #carousel-service {
@@ -22,6 +41,8 @@
 .al-sidebar {
   position: relative;
   z-index: 20;
+  height: 4468px;
+  width: 403px;
 }
 
 .al-header-upper-container {
@@ -34,4 +55,37 @@
   margin-top: 0;
   margin-left: 0;
   height: 0;
+}
+
+.al-reviews-number-text {
+  font-family: 'Lato', sans-serif;
+}
+
+.al-nav {
+  background-color: white;
+  border-left: 1px solid lightgrey;
+}
+
+.al-feedback-text {
+  margin-top: -0.5px;
+}
+
+.al-check-out-input {
+  left: 780px;
+  top: 80px;
+}
+
+button:hover {
+  background: none;
+  border: 1px solid #0067db;
+  transition: all .25s ease-in-out;
+  transition-property: all;
+  transition-duration: 0.25s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 0s;
+  box-shadow: inset 0 0 0 1px #0067db;
+}
+
+.similar-carousel {
+  padding-bottom: 80px;
 }
