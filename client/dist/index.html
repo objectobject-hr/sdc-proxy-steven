@@ -26,14 +26,16 @@
       if ($(".al-booking-tool-container").length && $("#carousel-service").length && $("#kat-service").length && $("#mg_root").length && $("#similar-service").length) {
         clearInterval(checkExist);
         document.addEventListener('scroll', function (event) {
-              var height = $("#similar-service").offset().top - 144;
-              console.log(height);
-              var sidebar = $(".al-sidebar");
-              sidebar.css("height", height);
+          var height = $("#similar-service").offset().top - 144;
+          var sidebar = $(".al-sidebar");
+          sidebar.css("height", height);
         }, true /*Capture event*/);
       }
     }, 100);
+
+    
   </script>
+
   <div id="awayhomeApp">
     <div id="searchHeader">
       <div id="search-bar-service"></div>
@@ -54,6 +56,7 @@
       <div id='similar-service'>
     </footer>
   </div>
+
   <script>
     // Script to adjust carousel modal z-index
     var carouselService = document.querySelector('#carousel-service');
