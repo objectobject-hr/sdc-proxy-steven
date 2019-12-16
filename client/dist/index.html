@@ -21,40 +21,11 @@
 </head>
 <body>
   <script>
+    // script to adjust sidebar height in relation to reviews length
     var checkExist = setInterval(function() {
       if ($(".al-booking-tool-container").length && $("#carousel-service").length && $("#kat-service").length && $("#mg_root").length && $("#similar-service").length) {
-        // if ($(".al-booking-tool-container").length) {
-        //  console.log("Exists!");
-        //  clearInterval(checkExist);
-        //  var wrap = $(".al-booking-tool-container");
-        // console.log('asd')
-        //  $("#booking-service").on("scroll", function(e) {
-        //    console.log(e);
-        //    if (this.scrollTop > 147 && this.scrolltop < 2000) {
-        //      wrap.addClass("al-nav");
-        //    } else {
-        //      wrap.removeClass("al-nav");
-        //    }
-        //  });
         clearInterval(checkExist);
         document.addEventListener('scroll', function (event) {
-    // or any other filtering condition
-          // var header = $(".al-header-container");
-          // var header1 = $(".al-booking-tool-container");
-          //     console.log(window.scrollY);
-          //     var link = header;
-          //     var offset = link.offset();
-          //     var top = offset.top;
-          //     var left = offset.left;
-          //     var bottom = top + link.outerHeight();
-          //     var right = left + link.outerWidth();
-          //     console.log((header1.offset()));
-          //     if (window.scrollY > bottom && window.scrollY < 3000) {
-          //       header1.addClass("al-nav");
-          //     } else if (window.scrollY >= 3000) {
-          //       var sidebar = $(".al-sidebar");
-          //       sidebar.css("height", 4000);
-          //     }
               var height = $("#similar-service").offset().top - 144;
               console.log(height);
               var sidebar = $(".al-sidebar");
@@ -84,6 +55,7 @@
     </footer>
   </div>
   <script>
+    // Script to adjust carousel modal z-index
     var carouselService = document.querySelector('#carousel-service');
     carouselService.addEventListener('click', function(e) {
       if (e.target.classList.value === 'preview-image' || e.target.classList.value === 'va-btn' || e.target.classList.value === 'btn-label') {
