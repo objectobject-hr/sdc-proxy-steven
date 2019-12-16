@@ -83,7 +83,17 @@
       <div id='similar-service'>
     </footer>
   </div>
-  
+  <script>
+    var carouselService = document.querySelector('#carousel-service');
+    carouselService.addEventListener('click', function(e) {
+      if (e.target.classList.value === 'preview-image' || e.target.classList.value === 'va-btn' || e.target.classList.value === 'btn-label') {
+        $('#carousel-service').css('z-index', 2000);
+      }
+      if (e.target.classList.value === 'close-icon' || e.target.classList.value === 'modal-close') {
+        $('#carousel-service').css('z-index', 10);
+      }
+    });
+  </script>
   <script src="austin-bundle.js"></script>
   <script src="steve-bundle.js"></script>
   <script src="kat-bundle.js"></script>
