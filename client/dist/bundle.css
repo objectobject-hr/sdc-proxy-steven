@@ -90,3 +90,13 @@
 .similar-carousel {
   padding-bottom: 80px;
 }
+
+#overview-sticky-nav {
+  background-color: white;
+  overflow: hidden;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
