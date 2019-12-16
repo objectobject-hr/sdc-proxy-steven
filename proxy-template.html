@@ -4,6 +4,11 @@
   <title>A Way Home</title>
   <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
   
   <script src="https://kit.fontawesome.com/16a3dafc75.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" type="text/css" href="austin.css">
@@ -15,6 +20,49 @@
 
 </head>
 <body>
+  <script>
+    var checkExist = setInterval(function() {
+      if ($(".al-booking-tool-container").length && $("#carousel-service").length && $("#kat-service").length && $("#mg_root").length && $("#similar-service").length) {
+        // if ($(".al-booking-tool-container").length) {
+        //  console.log("Exists!");
+        //  clearInterval(checkExist);
+        //  var wrap = $(".al-booking-tool-container");
+        // console.log('asd')
+        //  $("#booking-service").on("scroll", function(e) {
+        //    console.log(e);
+        //    if (this.scrollTop > 147 && this.scrolltop < 2000) {
+        //      wrap.addClass("al-nav");
+        //    } else {
+        //      wrap.removeClass("al-nav");
+        //    }
+        //  });
+        clearInterval(checkExist);
+        document.addEventListener('scroll', function (event) {
+    // or any other filtering condition
+          // var header = $(".al-header-container");
+          // var header1 = $(".al-booking-tool-container");
+          //     console.log(window.scrollY);
+          //     var link = header;
+          //     var offset = link.offset();
+          //     var top = offset.top;
+          //     var left = offset.left;
+          //     var bottom = top + link.outerHeight();
+          //     var right = left + link.outerWidth();
+          //     console.log((header1.offset()));
+          //     if (window.scrollY > bottom && window.scrollY < 3000) {
+          //       header1.addClass("al-nav");
+          //     } else if (window.scrollY >= 3000) {
+          //       var sidebar = $(".al-sidebar");
+          //       sidebar.css("height", 4000);
+          //     }
+              var height = $("#similar-service").offset().top - 144;
+              console.log(height);
+              var sidebar = $(".al-sidebar");
+              sidebar.css("height", height);
+        }, true /*Capture event*/);
+      }
+    }, 100);
+  </script>
   <div id="awayhomeApp">
     <div id="searchHeader">
       <div id="search-bar-service"></div>

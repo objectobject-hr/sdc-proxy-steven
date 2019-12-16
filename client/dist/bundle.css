@@ -41,7 +41,7 @@
 .al-sidebar {
   position: relative;
   z-index: 20;
-  height: 4468px;
+  /* height: 4468px; */
   width: 403px;
 }
 
