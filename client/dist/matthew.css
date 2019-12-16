@@ -189,3 +189,11 @@
   text-align: center;
   -webkit-font-smoothing: antialiased;
 }
+
+.map-title {
+  padding: 20px;
+}
+
+.loc-footer {
+  padding: 15px;
+}
