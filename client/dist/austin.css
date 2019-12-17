@@ -1,9 +1,13 @@
 .al-header-container {
   display: block;
   background-color: #f4f4f4;
+  position: relative;
+  z-index: 20000;
 }
 
 .al-nav {
+  background-color: white;
+  border-left: 1px solid lightgrey;
   position: sticky;
   position: -webkit-sticky;
   top: 0;
@@ -16,10 +20,10 @@
 }
 
 .al-header-options-container {
-  display: inline-block;
-  margin-top: 10px;
-  margin-left: 920px;
-  height: 50px;
+  display: flex;
+  margin-top: 0;
+  margin-left: 0;
+  height: 0;
 }
 
 .al-login-button {
@@ -44,7 +48,7 @@
 }
 
 .al-feedback-text {
-  margin-top: 7.5px;
+  margin-top: -0.5px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -216,23 +220,23 @@ body {
 .al-search-bar {
   position: absolute;
   left: 37.5px;
-  top: 80px;
+  top: 90px;
 }
 
 .al-check-in-input {
   position: absolute;
   left: 605px;
-  top: 80px;
+  top: 90px;
 }
 
 .al-check-out-input {
   position: absolute;
-  left: 740px;
-  top: 93px;
+  left: 785px;
+  top: 90px;
 }
 
 .al-shrink {
-  top: 83px;
+  top: 78px;
   font-size: 12px;
 }
 
@@ -263,7 +267,7 @@ body {
 
 .al-login-dropdown-container {
   position: absolute;
-  left: 1220px;
+  left: 1090px;
   top: 70px;
 }
 
@@ -304,7 +308,7 @@ body {
 
 .al-help-dropdown-container {
   position: absolute;
-  left: 1340px;
+  left: 1210px;
   top: 70px;
 }
 
@@ -414,7 +418,7 @@ body {
 
 .al-flag-dropdown-container {
   position: absolute;
-  left: 1180px;
+  left: 1050px;
   top: 70px;
 }
 
@@ -464,12 +468,15 @@ body {
 }
 
 .al-sidebar-container {
+  position: relative;
   text-align: right;
 }
 
 .al-sidebar {
+  position: relative;
+  z-index: 20;
   display: inline-block;
-  width: 400px;
+  width: 403px;
   height: 10000px;
   border-left: 1px solid lightgray;
   border-top: 1px solid lightgray;
@@ -595,7 +602,7 @@ body {
 
 .al-reviews-number-text {
   color: #3e64ff;
-  font-family: "Noto Sans TC", sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 13.5px;
 }
 

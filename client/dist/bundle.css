@@ -18,6 +18,7 @@
   bottom: 50px;
   background-color: white;
   align-content: flex-start;
+  position: relative;
 }
 
 #map-container {
@@ -30,7 +31,7 @@
   position: absolute;
   right: 0;
   top: 0;
-  z-index: 50;
+  z-index: 10;
 }
 
 #carousel-service {
@@ -38,42 +39,41 @@
   z-index: 10;
 }
 
-.al-sidebar {
+/* .al-sidebar {
   position: relative;
   z-index: 20;
-  /* height: 4468px; */
   width: 403px;
-}
+} */
 
 .al-header-upper-container {
   display: flex;
   justify-content: space-between;
 }
 
-.al-header-options-container {
+/* .al-header-options-container {
   display: flex;
   margin-top: 0;
   margin-left: 0;
   height: 0;
-}
+} */
 
-.al-reviews-number-text {
+/* .al-reviews-number-text {
   font-family: 'Lato', sans-serif;
-}
+} */
 
-.al-nav {
+/* .al-nav {
   background-color: white;
   border-left: 1px solid lightgrey;
-}
+} */
 
-.al-feedback-text {
+/* .al-feedback-text {
   margin-top: -0.5px;
-}
+} */
 
-.al-check-out-input {
+/* .al-check-out-input {
   left: 780px;
   top: 80px;
-}
+} */
 
 .al-list-property-button:hover,
 .al-search-button:hover {
