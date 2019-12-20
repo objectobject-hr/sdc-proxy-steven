@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "server": "nodemon ./server/index.js",
-    "build": "webpack -w -d"
+    "start": "node server",
+    "build": "webpack -w -d",
+    "dev": "nodemon server",
+    "test": "test",
+    "seed": "cd db && node seed.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +32,7 @@
     "css-loader": "^3.3.2",
     "express": "^4.17.1",
     "extract-text-webpack-plugin": "^3.0.2",
+    "gulp": "^4.0.2",
     "html-webpack-plugin": "^3.2.0",
     "http-proxy-middleware": "^0.20.0",
     "mongodb": "^3.3.5",

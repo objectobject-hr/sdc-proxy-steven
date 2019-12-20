@@ -3,13 +3,13 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-      austin: path.resolve(__dirname, './search-bar-booking-tool/client/src'),
-      kat: path.resolve(__dirname, './overview-amenities/client/src'),
-      matthew: path.resolve(__dirname, './Reviews/client/src'),
+      // austin: path.resolve(__dirname, './search-bar-booking-tool/client/src'),
+      // kat: path.resolve(__dirname, './overview-amenities/client/src'),
+      // matthew: path.resolve(__dirname, './Reviews/client/src'),
       steve: path.resolve(__dirname, './carousel-recommend-listings/src/components')
   },
   output: {
-      path: path.resolve(__dirname, './client/dist'),
+      path: path.resolve(__dirname, './dist'),
       filename: "[name]-bundle.js"
   },
   plugins: [new HtmlWebpackPlugin({template: 'proxy-template.html'})],
