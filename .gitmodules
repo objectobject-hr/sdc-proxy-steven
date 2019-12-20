@@ -1,12 +1,19 @@
-[submodule "Reviews"]
-	path = Reviews
-	url = https://github.com/hrla33-falcons/Reviews
-[submodule "carousel-recommend-listings"]
-	path = carousel-recommend-listings
-	url = https://github.com/hrla33-falcons/carousel-recommend-listings
-[submodule "search-bar-booking-tool"]
-	path = search-bar-booking-tool
-	url = https://github.com/hrla33-falcons/search-bar-booking-tool
-[submodule "overview-amenities"]
-	path = overview-amenities
-	url = https://github.com/hrla33-falcons/overview-amenities
+[submodule "sdc-service-steven"]
+	path = sdc-service-steven
+	url = https://github.com/objectobject-hr/sdc-service-steven.git
+
+
+
+
+# [submodule "Reviews"]
+# 	path = Reviews
+# 	url = https://github.com/hrla33-falcons/Reviews
+# [submodule "carousel-recommend-listings"]
+# 	path = carousel-recommend-listings
+# 	url = https://github.com/hrla33-falcons/carousel-recommend-listings
+# [submodule "search-bar-booking-tool"]
+# 	path = search-bar-booking-tool
+# 	url = https://github.com/hrla33-falcons/search-bar-booking-tool
+# [submodule "overview-amenities"]
+# 	path = overview-amenities
+# 	url = https://github.com/hrla33-falcons/overview-amenities
